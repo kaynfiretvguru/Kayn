@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.kaynswizard" name="Kayn's Wizard" version="1.1.5" provider-name="Kayn">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">A simple Wizard to assist in downloading and installing media from the Kayn Repository</summary>
+    <description lang="en">This is a easy to use Wizard to help users download and install builds, Add-Ons, dependencies, updates, and more from the Kayn Repository.</description>
+	<email>kaynfiretvguru@gmail.com</email>
+    <platform>all</platform>
+  </extension>
+</addon>
