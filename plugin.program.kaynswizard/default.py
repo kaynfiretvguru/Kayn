@@ -12,14 +12,14 @@ import ntpath
 
 USER_AGENT = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3'
 base=''
-ADDON=xbmcaddon.Addon(id='plugin.program.eldritchwizard')
+ADDON=xbmcaddon.Addon(id='plugin.program.kaynswizard')
 dialog = xbmcgui.Dialog()    
-VERSION = "1.1.0"
-PATH = "Eldritch Wizard"            
+VERSION = "1.1.5"
+PATH = "Kayn's Wizard"            
 
     
 def CATEGORIES():
-    link = OPEN_URL('https://github.com/kaynfiretvguru/Eldritch/raw/master/wizard.html').replace('\n','').replace('\r','')
+    link = OPEN_URL('https://github.com/kaynfiretvguru/Kayn/raw/master/wizard.html').replace('\n','').replace('\r','')
     match = re.compile('name="(.+?)".+?rl="(.+?)".+?mg="(.+?)".+?anart="(.+?)".+?escription="(.+?)"').findall(link)
     for name,url,iconimage,fanart,description in match:
         addDir(name,url,1,iconimage,fanart,description)
@@ -38,7 +38,7 @@ def OPEN_URL(url):
 def wizard(name,url,description):
     path = xbmc.translatePath(os.path.join('special://home/addons','packages'))
     dp = xbmcgui.DialogProgress()
-    dp.create("[COLOR=darkgreen]Eldritch Wizard[/COLOR]","[COLOR=darkgreen]DOWNLOADING[/COLOR]",'', '[COLOR=darkgreen]Please Wait[/COLOR]')
+    dp.create("[COLOR=lightblue]Kayn's Wizard[/COLOR]","[COLOR=lightblue]DOWNLOADING[/COLOR]",'', '[COLOR=lightblue]Please Wait[/COLOR]')
     lib=os.path.join(path, name+'.zip')
     try:
        os.remove(lib)
@@ -47,7 +47,7 @@ def wizard(name,url,description):
     downloader.download(url, lib, dp)
     addonfolder = xbmc.translatePath(os.path.join('special://','home'))
     time.sleep(2)
-    dp.update(0,"[COLOR=darkgreen]EXTRACTING FILES[/COLOR]")
+    dp.update(0,"[COLOR=lightblue]EXTRACTING FILES[/COLOR]")
     print '======================================='
     print addonfolder
     print '======================================='
@@ -57,7 +57,7 @@ def wizard(name,url,description):
       
         
 def killxbmc():
-    choice = xbmcgui.Dialog().yesno('[COLOR=darkgreen]DOWNLOAD COMPLETE[/COLOR]', 'Please force close kodi to continue.', 'Click "Close" to force Kodi to close.', nolabel='Return',yeslabel='Close')
+    choice = xbmcgui.Dialog().yesno('[COLOR=lightblue]DOWNLOAD COMPLETE[/COLOR]', 'Please force close kodi to continue.', 'Click "Close" to force Kodi to close.', nolabel='Return',yeslabel='Close')
     if choice == 0:
         return
     elif choice == 1:
@@ -66,11 +66,13 @@ def killxbmc():
     print "Platform: " + str(myplatform)
     if myplatform == 'osx': # OSX
         print "############   try osx force close  #################"
+        try: Common.KillKodi()		
+        except: pass
         try: os.system('killall -9 XBMC')
         except: pass
         try: os.system('killall -9 Kodi')
         except: pass
-        dialog.ok("[COLOR=darkgreen][B]WARNING  !!![/COLOR][/B]", "If you\'re seeing this message it means the force close", "was unsuccessful. Please force close XBMC/Kodi [COLOR=darkgreen]DO NOT[/COLOR] exit cleanly via the menu.",'')
+        dialog.ok("[COLOR=lightblue][B]WARNING  !!![/COLOR][/B]", "If you\'re seeing this message it means the force close", "was unsuccessful. Please force close XBMC/Kodi [COLOR=lightblue]DO NOT[/COLOR] exit cleanly via the menu.",'')
     elif myplatform == 'linux': #Linux
         print "############   try linux force close  #################"
         try: os.system('killall XBMC')
@@ -81,7 +83,7 @@ def killxbmc():
         except: pass
         try: os.system('killall -9 kodi.bin')
         except: pass
-        dialog.ok("[COLOR=darkgreen][B]WARNING  !!![/COLOR][/B]", "If you\'re seeing this message it means the force close", "was unsuccessful. Please force close XBMC/Kodi [COLOR=darkgreen]DO NOT[/COLOR] exit cleanly via the menu.",'')
+        dialog.ok("[COLOR=lightblue][B]WARNING  !!![/COLOR][/B]", "If you\'re seeing this message it means the force close", "was unsuccessful. Please force close XBMC/Kodi [COLOR=lightblue]DO NOT[/COLOR] exit cleanly via the menu.",'')
     elif myplatform == 'android': # Android  
         print "############   try android force close  #################"
         try: os.system('adb shell am force-stop org.xbmc.kodi')
@@ -92,7 +94,7 @@ def killxbmc():
         except: pass
         try: os.system('adb shell am force-stop org.xbmc')
         except: pass        
-        dialog.ok("[COLOR=darkgreen][B]WARNING  !!![/COLOR][/B]", "Your system has been detected as Android, you ", "[COLOR=darkgreen][B]MUST[/COLOR][/B] force close XBMC/Kodi. [COLOR=darkgreen]DO NOT[/COLOR] exit cleanly via the menu.","Either close using Task Manager (If unsure pull the plug).")
+        dialog.ok("[COLOR=lightblue][B]WARNING  !!![/COLOR][/B]", "Your system has been detected as Android, you ", "[COLOR=lightblue][B]MUST[/COLOR][/B] force close XBMC/Kodi. [COLOR=lightblue]DO NOT[/COLOR] exit cleanly via the menu.","Either close using Task Manager (If unsure pull the plug).")
     elif myplatform == 'windows': # Windows
         print "############   try windows force close  #################"
         try:
@@ -111,7 +113,7 @@ def killxbmc():
             os.system('@ECHO off')
             os.system('TASKKILL /im XBMC.exe /f')
         except: pass
-        dialog.ok("[COLOR=darkgreen][B]WARNING  !!![/COLOR][/B]", "If you\'re seeing this message it means the force close", "was unsuccessful. Please force close XBMC/Kodi [COLOR=darkgreen]DO NOT[/COLOR] exit cleanly via the menu.","Use task manager and NOT ALT F4")
+        dialog.ok("[COLOR=lightblue][B]WARNING  !!![/COLOR][/B]", "If you\'re seeing this message it means the force close", "was unsuccessful. Please force close XBMC/Kodi [COLOR=lightblue]DO NOT[/COLOR] exit cleanly via the menu.","Use task manager and NOT ALT F4")
     else: #ATV
         print "############   try atv force close  #################"
         try: os.system('killall AppleTV')
@@ -121,7 +123,7 @@ def killxbmc():
         except: pass
         try: os.system('sudo initctl stop xbmc')
         except: pass
-        dialog.ok("[COLOR=darkgreen][B]WARNING  !!![/COLOR][/B]", "If you\'re seeing this message it means the force close", "was unsuccessful. Please force close XBMC/Kodi [COLOR=darkgreen]DO NOT[/COLOR] exit via the menu.","Your platform could not be detected so just pull the power cable.")    
+        dialog.ok("[COLOR=lightblue][B]WARNING  !!![/COLOR][/B]", "If you\'re seeing this message it means the force close", "was unsuccessful. Please force close XBMC/Kodi [COLOR=lightblue]DO NOT[/COLOR] exit via the menu.","Your platform could not be detected so just pull the power cable.")    
 
 def platform():
     if xbmc.getCondVisibility('system.platform.android'):
