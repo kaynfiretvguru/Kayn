@@ -7,7 +7,7 @@
         <provides>video executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">A simple Wizard to assist in downloading and installing media from the Kayn Repository</summary>
+    <summary lang="en">A simple Wizard to assist in downloading and installing media from the Kayn Repository.</summary>
     <description lang="en">This is a easy to use Wizard to help users download and install builds, Add-Ons, dependencies, updates, and more from the Kayn Repository.</description>
 	<email>kaynfiretvguru@gmail.com</email>
     <platform>all</platform>

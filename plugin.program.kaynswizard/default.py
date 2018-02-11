@@ -66,8 +66,6 @@ def killxbmc():
     print "Platform: " + str(myplatform)
     if myplatform == 'osx': # OSX
         print "############   try osx force close  #################"
-        try: Common.KillKodi()		
-        except: pass
         try: os.system('killall -9 XBMC')
         except: pass
         try: os.system('killall -9 Kodi')
