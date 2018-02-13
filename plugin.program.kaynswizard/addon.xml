@@ -4,7 +4,7 @@
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video executable</provides>
+        <provides>program executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">A simple Wizard to assist in downloading and installing media from the Kayn Repository.</summary>
