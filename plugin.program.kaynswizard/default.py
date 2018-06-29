@@ -14,7 +14,7 @@ USER_AGENT = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/
 base=''
 ADDON=xbmcaddon.Addon(id='plugin.program.kaynswizard')
 dialog = xbmcgui.Dialog()    
-VERSION = "1.1.5"
+VERSION = "1.1.6"
 PATH = "Kayn's Wizard"            
 
     
