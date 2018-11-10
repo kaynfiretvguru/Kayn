@@ -54,12 +54,12 @@
   </extension>
 </addon>
 
-<addon id="plugin.program.kaynswizard" name="Kayn's Wizard" version="1.1.5" provider-name="Kayn">
+<addon id="plugin.program.kaynswizard" name="Kayn's Wizard" version="1.1.6" provider-name="Kayn">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>program executable</provides>
+        <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">A simple Wizard to assist in downloading and installing media from the Kayn Repository.</summary>
@@ -69,7 +69,7 @@
   </extension>
 </addon>
 
-    <addon id="repository.kayn" name="Kayn's Repository" version="1.1.5" provider-name="Kayn">
+    <addon id="repository.kayn" name="Kayn's Repository" version="1.1.6" provider-name="Kayn">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
