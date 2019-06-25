@@ -56,6 +56,8 @@ def GET_KODI_VERSION():
 		codename = 'Jarvis'
 	elif version >= 17.0 and version <= 17.9:
 		codename = 'Krypton'
+	elif version >= 18.0 and version <= 18.9:
+		codename = 'Leia'
 	else: codename = "Decline"
 	
 	return codename
@@ -79,6 +81,8 @@ def GET_KODI_VERSION_DETAILS():
 			codename = 'Jarvis'
 		elif version >= 17.0 and version <= 17.9:
 			codename = 'Krypton'
+		elif version >= 18.0 and version <= 18.9:
+			codename = 'Leia'
 		else: codename = "Decline"
 		
 		string = codename + " - " + str(version)

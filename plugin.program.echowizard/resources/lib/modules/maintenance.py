@@ -375,7 +375,9 @@ def GET_ADDON_STATS():
         codename = 'Jarvis'
     if version >= 17.0 and version <= 17.9:
         codename = 'Krypton'
-
+    if version >= 18.0 and version <= 18.9:
+        codename = 'Leia'
+		
     dp.update(80,'[COLOR white]Getting your IP address.[/COLOR]')
     f = urllib.urlopen("http://www.canyouseeme.org/")
     html_doc = f.read()
