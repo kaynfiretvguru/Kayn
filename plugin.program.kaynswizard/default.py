@@ -65,7 +65,7 @@ def INDEX():
 	addItem('Update for VOID (Mobile)',KAYN_URL,5,VOID_ICON,VOID_FANART,'UPDATED ON: April 28th 2018. Update for the Mobile VOID Build. Only click this if you have the Mobile VOID Build installed.')
 	addItem('VOID Upgrade',KAYN_URL,6,UPGRADE_ICON,VOID_FANART,'UPDATED ON: June 27th 2019. Upgrade for the VOID Build to allow compatability for Kodi 18.')
 	addItem('Sources',KAYN_URL,7,SOURCES_ICON,KAYN_FANART,'Repository Sources, not actual Repositories. Download if your sources.xml file has been corrupted or is missing.')
-	addItem('Force Close Kodi',KAYN_URL,8,KAYN_ICON,KAYN_FANART,'Intantly Force Closes Kodi')
+	addItem('Force Close Kodi',KAYN_URL,9,KAYN_ICON,KAYN_FANART,'Intantly Force Closes Kodi')
 #	addItem(name,url,mode,iconimage,fanart,description)
 
 
