@@ -1,4 +1,6 @@
-import zipfile
+#from resources.libs
+import zfile as zipfile
+
 
 def all(_in, _out, dp=None):
     if dp:
