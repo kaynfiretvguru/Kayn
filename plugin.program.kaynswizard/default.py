@@ -1,15 +1,14 @@
-import xbmc, xbmcaddon, xbmcgui, xbmcplugin, os, sys, base64
+import xbmc,xbmcaddon,xbmcgui,xbmcplugin,os,sys,base64
 import shutil
 import urllib2,urllib
 import re
-import extract
 import time
-import downloader
-import plugintools
-import zipfile
 import ntpath
-import zfile as zipfile
 
+from resources.lib.modules import downloader
+from resources.lib.modules import extract
+from resources.lib.modules import plugintools
+from resources.lib.modules import zfile as zipfile
 
 
 addon_id           = 'plugin.program.kaynswizard'
@@ -45,7 +44,7 @@ USER_AGENT = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/
 base=''
 ADDON=xbmcaddon.Addon(id='plugin.program.kaynswizard')
 dialog = xbmcgui.Dialog()    
-VERSION = "1.1.8"
+VERSION = "1.1.9"
 PATH = "Kayn's Wizard"            
 
     

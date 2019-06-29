@@ -1,9 +1,13 @@
-<rss version="1.1.6">
+<rss version="1.1.7">
  <channel>
   <title>Kayn News</title>
   
   <item>
-   <title>The most recent updates available for VOID were made on November 11 2018. Ensure you download and install them if you have not done so already.</title>
+   <title>An upgrade for VOID is now available. Ensure you have Kodi 18 Leia installed before trying to upgrade.</title>
+  </item>
+
+  <item>
+   <title>Updates are being worked on and will be available to improve the VOID build after upgrading.</title>
   </item>
 
   <item>
@@ -16,3 +20,7 @@
   
  </channel>
 </rss>
+
+'
+#The most recent updates available for VOID were made on November 11 2018. Ensure you download and install them if you have not done so already.
+'
