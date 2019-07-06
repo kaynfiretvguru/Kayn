@@ -1,0 +1,41 @@
+<NAME>VOID Build</NAME>
+<URL>https://bitbucket.org/kaynfiretvguru/void/downloads/VOID.zip?dl=1</URL>
+<ICON>https://github.com/kaynfiretvguru/Kayn/raw/master/VOIDIcon.jpg</ICON>
+<FANART>https://github.com/kaynfiretvguru/Kayn/raw/master/VOIDFanart.jpg</FANART>
+<DESCRIPTION>The latest build from Kayn. This build contains the following sections; Library, Live News, Movies, TV Shows, Kids, Sports, Box Sets, ALBoe(A Little Bit of Everything), Maintenance, Add-ons, and Settings.</DESCRIPTION>
+
+<NAME>"VOID Build (Mobile)</NAME>
+<URL>https://bitbucket.org/kaynfiretvguru/mobile/downloads/VOIDMobile.zip?dl=1</URL>
+<ICON>https://github.com/kaynfiretvguru/Kayn/raw/master/VOIDIcon.jpg</ICON>
+<FANART>https://github.com/kaynfiretvguru/Kayn/raw/master/VOIDFanart.jpg</FANART>
+<DESCRIPTION>A mobile version of the VOID Build. This build has been configured for small touchscreen devices, such as phones and tablets.</DESCRIPTION>
+
+<NAME>"Update for VOID</NAME>
+<URL>https://bitbucket.org/kaynfiretvguru/tools/downloads/Update_VOID.zip?dl=1</URL>
+<ICON>https://github.com/kaynfiretvguru/Kayn/raw/master/VOIDIcon.jpg</ICON>
+<FANART>https://github.com/kaynfiretvguru/Kayn/raw/master/VOIDFanart.jpg</FANART>
+<DESCRIPTION>UPDATED ON: April 28th 2018. Update for the VOID Build. Only click this if you have the VOID Build installed.</DESCRIPTION>
+
+<NAME>"Update for VOID Mobile</NAME>
+<URL>https://bitbucket.org/kaynfiretvguru/tools/downloads/Update_VOID_Mobile.zip?dl=1</URL>
+<ICON>https://github.com/kaynfiretvguru/Kayn/raw/master/VOIDIcon.jpg</ICON>
+<FANART>https://github.com/kaynfiretvguru/Kayn/raw/master/VOIDFanart.jpg</FANART>
+<DESCRIPTION>UPDATED ON: April 28th 2018. Update for the Mobile VOID Build. Only click this if you have the Mobile VOID Build installed.</DESCRIPTION>
+
+<NAME>"Sources</NAME>
+<URL>https://bitbucket.org/kaynfiretvguru/tools/downloads/Sources.zip?dl=1</URL>
+<ICON>https://github.com/kaynfiretvguru/Kayn/raw/master/SourcesIcon.jpg</ICON>
+<FANART>https://github.com/kaynfiretvguru/Kayn/raw/master/KaynFanart.jpg</FANART>
+<DESCRIPTION>Repository Sources, not actual Repositories. Download if your sources.xml file has been corrupted or is missing.</DESCRIPTION>
+
+<NAME>"FRESH START</NAME>
+<URL>https://bitbucket.org/kaynfiretvguru/tools/downloads/FreshStart.zip?dl=1</URL>
+<ICON>https://github.com/kaynfiretvguru/Kayn/raw/master/FreshStartIcon.jpg</ICON>
+<FANART>https://github.com/kaynfiretvguru/Kayn/raw/master/KaynFanart.jpg</FANART>
+<DESCRIPTION>ONLY INSTALL IF YOU HAVE ALREADY BACKED UP YOUR BUILD AND INSTALLED A NEW VERSION OF KODI. This tool is was designed to help with the Kodi upgrade process. The only Add-Ons in this download are minor maintenance Add-Ons to allow you to restore your backup after downloading and installing a newer version of Kodi.</DESCRIPTION>
+
+<NAME>"VOID Upgrade</NAME>
+<URL>https://bitbucket.org/kaynfiretvguru/tools/downloads/VOID_Upgrade.zip?dl=1</URL>
+<ICON>https://github.com/kaynfiretvguru/Kayn/raw/master/UpgradeIcon.jpg</ICON>
+<FANART>https://github.com/kaynfiretvguru/Kayn/raw/master/VOIDFanart.jpg</FANART>
+<DESCRIPTION>UPDATED ON: June 25th 2019. Upgrade for the VOID Build to allow compatability for Kodi 18.</DESCRIPTION>
