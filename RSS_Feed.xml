@@ -1,26 +1,20 @@
-<rss version="1.1.7">
+<rss version="1.1.8">
  <channel>
   <title>Kayn News</title>
   
   <item>
-   <title>An upgrade for VOID is now available. Ensure you have Kodi 18 Leia installed before trying to upgrade.</title>
+   <title>DISCONTINUATION OF SERVICES</title>
   </item>
 
   <item>
-   <title>Updates are being worked on and will be available to improve the VOID build after upgrading.</title>
+   <title>As of September 6th, 2019, all updates, patches, upgrades, and further maintenance on and for builds by Kayn have been halted and are postponed until further notice.</title>
   </item>
 
-  <item>
-   <title>Visit "https://kaynfiretvguru.wixsite.com/kayn" for more information.</title>
-  </item>
-  
-  <item>
-   <title>Please email "kaynfiretvguru@gmail.com" for any issues you have with your build.</title>
-  </item>
-  
  </channel>
 </rss>
 
 '
 #The most recent updates available for VOID were made on November 11 2018. Ensure you download and install them if you have not done so already.
+#Visit "https://kaynfiretvguru.wixsite.com/kayn" for more information.
+#Please email "kaynfiretvguru@gmail.com" for any issues you have with your build.
 '
